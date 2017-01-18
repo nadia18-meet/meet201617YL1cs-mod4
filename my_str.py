@@ -18,9 +18,9 @@ class MyStr(str) : #<-----Replace xyz-make a new class, MyStr, that inherits fro
 
     
     def replace(self, take_out, use_this):
-        #temp=self.lower()
-        #take_out=take_out.lower()
-        #use_this=use_this.lower()
+        temp=self.lower()
+        take_out=take_out.lower()
+        use_this=use_this.lower()
         return temp.replace (take_out, use_this)
         
 """
