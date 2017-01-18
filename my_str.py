@@ -17,13 +17,11 @@ class MyStr(str) : #<-----Replace xyz-make a new class, MyStr, that inherits fro
         return self+'!'*num
 
     
-def replace(self, take_out, use_this):
-    
-    test= MyStr('aAaA')
-    test.replace('aA','b')
-    super(MyStr, self).__init__(take_out, use_this)
-    return self.replace 
-        
+    def replace(self, take_out, use_this):
+        #temp=self.lower()
+        #take_out=take_out.lower()
+        #use_this=use_this.lower()
+        return temp.replace (take_out, use_this)
         
 """
         Override the replace method of string.
@@ -51,4 +49,4 @@ def replace(self, take_out, use_this):
         #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
-        
+       
